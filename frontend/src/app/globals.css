@@ -20,3 +20,250 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Ensure all images maintain proper width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure section titles are centered */
+.home-layout .section-title {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* Fix Next.js Image component wrapper spans - Only for specific sections */
+.home-layout .home-hero-slider span,
+.home-layout .trending-section span,
+.home-layout .krsnaa-picks-section span,
+.home-layout .best-seller span {
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative !important;
+  display: block !important;
+}
+
+/* Ensure full-width banners stay full width */
+.home-layout .home-hero-slider,
+.home-layout .gift-999,
+.home-layout .press-franchisee,
+.home-layout .sustainable-products,
+.home-layout .bydesign-locator {
+  width: 100%;
+}
+
+.home-layout .home-hero-slider img,
+.home-layout .gift-999 img,
+.home-layout .press-franchisee img,
+.home-layout .sustainable-products img,
+.home-layout .bydesign-locator img {
+  width: 100%;
+  height: auto;
+}
+
+/* Fix Trending section image heights to be consistent */
+.home-layout .trending-section .trending-wrapper {
+  align-items: stretch;
+}
+
+.home-layout .trending-section .trending-wrapper .left-trending,
+.home-layout .trending-section .trending-wrapper .right-trending {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-layout .trending-section .trending-wrapper .left-trending a.left-trending-link {
+  height: 100%;
+  display: flex;
+}
+
+.home-layout .trending-section .trending-wrapper .left-trending a.left-trending-link img,
+.home-layout .trending-section .trending-wrapper .left-trending a.left-trending-link span {
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.home-layout .trending-section .trending-wrapper .right-trending .right-trending-slide {
+  height: 100%;
+  display: flex;
+}
+
+.home-layout .trending-section .trending-wrapper .right-trending .right-trending-slide a {
+  height: 100%;
+  display: flex;
+}
+
+.home-layout .trending-section .trending-wrapper .right-trending .right-trending-slide img,
+.home-layout .trending-section .trending-wrapper .right-trending .right-trending-slide span {
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Fix Krsnaa Picks section (same structure as Trending) */
+.home-layout .krsnaa-picks-section .trending-wrapper {
+  align-items: stretch;
+}
+
+.home-layout .krsnaa-picks-section .trending-wrapper .left-trending,
+.home-layout .krsnaa-picks-section .trending-wrapper .right-trending {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-layout .krsnaa-picks-section .trending-wrapper .left-trending a.left-trending-link {
+  height: 100%;
+  display: flex;
+}
+
+.home-layout .krsnaa-picks-section .trending-wrapper .left-trending a.left-trending-link img,
+.home-layout .krsnaa-picks-section .trending-wrapper .left-trending a.left-trending-link span {
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.home-layout .krsnaa-picks-section .trending-wrapper .right-trending .right-trending-slide {
+  height: 100%;
+  display: flex;
+}
+
+.home-layout .krsnaa-picks-section .trending-wrapper .right-trending .right-trending-slide a {
+  height: 100%;
+  display: flex;
+}
+
+.home-layout .krsnaa-picks-section .trending-wrapper .right-trending .right-trending-slide img,
+.home-layout .krsnaa-picks-section .trending-wrapper .right-trending .right-trending-slide span {
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Deal cards - maintain proper sizing */
+.home-layout .deals-of-month-section .deal-card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.home-layout .deals-of-month-section .deals-left-banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Fix cart button size in deal cards */
+.home-layout .deals-of-month-section .deal-cart-btn {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  min-height: 34px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.home-layout .deals-of-month-section .deal-cart-btn img {
+  width: 16px !important;
+  height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  object-fit: contain !important;
+}
+
+
+/* Deals of the Month slider arrows */
+.home-layout .deals-of-month-section .deals-slider-wrapper {
+  position: relative;
+  padding: 0 50px;
+}
+
+@media (max-width: 992px) {
+  .home-layout .deals-of-month-section .deals-slider-wrapper {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-layout .deals-of-month-section .deals-slider-wrapper {
+    padding: 0 30px;
+  }
+}
+
+.home-layout .deals-of-month-section .deals-slider .slick-arrow {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.home-layout .deals-of-month-section .deals-slider .slick-arrow:hover {
+  background-color: #f9f9f9;
+  border-color: #bbb;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+}
+
+.home-layout .deals-of-month-section .deals-slider .slick-arrow:before {
+  font-size: 20px;
+  color: #333;
+  opacity: 1;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.home-layout .deals-of-month-section .deals-slider .slick-prev {
+  left: -45px;
+}
+
+.home-layout .deals-of-month-section .deals-slider .slick-next {
+  right: -45px;
+}
+
+@media (max-width: 992px) {
+  .home-layout .deals-of-month-section .deals-slider .slick-prev {
+    left: -35px;
+  }
+  
+  .home-layout .deals-of-month-section .deals-slider .slick-next {
+    right: -35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-layout .deals-of-month-section .deals-slider .slick-prev {
+    left: -25px;
+  }
+  
+  .home-layout .deals-of-month-section .deals-slider .slick-next {
+    right: -25px;
+  }
+  
+  .home-layout .deals-of-month-section .deals-slider .slick-arrow {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.home-layout .deals-of-month-section .deals-slider .slick-arrow.slick-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+}
+
+.home-layout .deals-of-month-section .deals-slider .slick-arrow.slick-disabled:hover {
+  background-color: #f5f5f5;
+  border-color: #d8d8d8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}

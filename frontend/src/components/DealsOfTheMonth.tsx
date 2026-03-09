@@ -41,7 +41,7 @@ export default function DealsOfTheMonth() {
       price: 1439,
       originalPrice: 3599,
       discount: '60% OFF',
-      image: 'https://icmedianew.gumlet.io/pub/media/catalog/product/cache/8146ef1b96804dd4246ef773e8951496/52121512SD01698/India-Circus-by-Krsnaa-Mehta-Aureolin-Luxurious-Drape-12-x-12-Cushion-Cover-52121512SD01698-2.jpg',
+      image: '/images/deal-cushion-aureolin.jpg',
       link: '/aureolin-luxurious-drape-cushion-cover',
       endDate: 'Wed, 11th Mar'
     },
@@ -51,7 +51,7 @@ export default function DealsOfTheMonth() {
       price: 559,
       originalPrice: 1399,
       discount: '60% OFF',
-      image: 'https://icmedianew.gumlet.io/pub/media/catalog/product/cache/8146ef1b96804dd4246ef773e8951496/i/n/india-circus-by-krsnaa-mehta-flight-of-birds-dinner-plate-52152000sd02228-2.jpg',
+      image: '/images/deal-plate-birds.jpg',
       link: '/flight-of-birds-dinner-plate',
       endDate: 'Wed, 11th Mar'
     },
@@ -61,7 +61,7 @@ export default function DealsOfTheMonth() {
       price: 799,
       originalPrice: 1999,
       discount: '60% OFF',
-      image: 'https://icmedianew.gumlet.io/pub/media/catalog/product/cache/8146ef1b96804dd4246ef773e8951496/i/n/india-circus-by-krsnaa-mehta-garden-hi-tea-12-x-12-cushion-cover-set-of-5-52121512sd01766-1.jpg',
+      image: '/images/deal-cushion-garden.jpg',
       link: '/garden-hi-tea-cushion-cover-set-of-5',
       endDate: 'Wed, 11th Mar'
     },
@@ -71,8 +71,28 @@ export default function DealsOfTheMonth() {
       price: 799,
       originalPrice: 1999,
       discount: '60% OFF',
-      image: 'https://icmedianew.gumlet.io/pub/media/catalog/product/cache/8146ef1b96804dd4246ef773e8951496/i/n/india-circus-by-krsnaa-mehta-abstract-camellia-12-x-12-cushion-cover-set-of-5-52121512sd01767-1.jpg',
+      image: '/images/deal-cushion-camellia.jpg',
       link: '/abstract-camellia-cushion-cover-set-of-5',
+      endDate: 'Wed, 11th Mar'
+    },
+    {
+      id: 5,
+      title: 'Aureolin Luxurious Drape Cushion Cover',
+      price: 1439,
+      originalPrice: 3599,
+      discount: '60% OFF',
+      image: '/images/deal-cushion-aureolin.jpg',
+      link: '/aureolin-luxurious-drape-cushion-cover',
+      endDate: 'Wed, 11th Mar'
+    },
+    {
+      id: 6,
+      title: 'Flight of Birds Dinner Plate',
+      price: 559,
+      originalPrice: 1399,
+      discount: '60% OFF',
+      image: '/images/deal-plate-birds.jpg',
+      link: '/flight-of-birds-dinner-plate',
       endDate: 'Wed, 11th Mar'
     }
   ]
@@ -85,10 +105,8 @@ export default function DealsOfTheMonth() {
             <img 
               src="/images/DOM_16_02_26.jpg" 
               alt="Deals of the Month"
-              onError={(e) => {
-                console.error('Banner image failed to load');
-                e.currentTarget.style.display = 'block';
-              }}
+              width={400}
+              height={600}
             />
           </a>
         </div>
@@ -102,11 +120,12 @@ export default function DealsOfTheMonth() {
                     <img 
                       src={deal.image} 
                       alt={deal.title}
-                      onError={(e) => {
-                        console.error(`Product image failed to load: ${deal.title}`);
-                        e.currentTarget.style.display = 'block';
-                      }}
+                      width={300}
+                      height={300}
                     />
+                    <button className="deal-cart-btn" aria-label="Add to cart">
+                      <img src="/images/add-to-cart-1.png" alt="cart" width={16} height={16} />
+                    </button>
                   </div>
                   <div className="deal-card-content">
                     <h3 className="deal-title">{deal.title}</h3>
@@ -115,7 +134,7 @@ export default function DealsOfTheMonth() {
                       <span className="original-price">₹{deal.originalPrice}</span>
                     </div>
                     <div className="deal-timer">
-                      <span className="timer-icon">⏰</span>
+                      <span className="timer-icon"></span>
                       <span className="timer-text">Get it by: {deal.endDate}</span>
                     </div>
                   </div>

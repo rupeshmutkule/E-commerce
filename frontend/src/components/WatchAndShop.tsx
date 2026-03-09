@@ -26,9 +26,9 @@ export default function WatchAndShop() {
       </h1>
       <div 
         className="render_lively_html_content" 
-        brand_id="b937c8b85a" 
-        flow="h0kl3" 
-        wid_id="1fd86d3760"
+        data-brand-id="b937c8b85a" 
+        data-flow="h0kl3" 
+        data-wid-id="1fd86d3760"
       >
       </div>
     </div>

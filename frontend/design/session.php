@@ -1,2 +1,0 @@
-
-{"status":"success","customer_id":"not logged in","htmldata":"<a   href=\"#\" class=\"top_signin ses\" data-toggle=\"modal\" data-target=\"#signinPhoneModal\" ><div class=\"profile top_signin  ses\"><\/div><\/a>","cart_count":null,"commonInputs":"<input type='hidden' id='isLoggedIn' value='0'><input type='hidden' id='form_key_input' value='1kBschv3GsTwYWiz'>","mobileHeader":""}

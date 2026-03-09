@@ -11,7 +11,13 @@ const nextConfig = {
         hostname: 'indiacircus.com',
       },
     ],
+    unoptimized: false,
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    formats: ['image/webp'],
   },
+  // Empty turbopack config to silence the warning
+  turbopack: {},
   // Suppress Watchpack warnings for Windows system files
   webpack: (config, { isServer }) => {
     if (!isServer) {

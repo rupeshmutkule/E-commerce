@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useSlickSlider } from '@/hooks/useSlickSlider'
 
 const slides = [
@@ -36,8 +37,24 @@ export default function HeroSlider() {
       {slides.map((slide) => (
         <div key={slide.id} className="home-hero-slide">
           <a href={slide.href}>
-            <img className="web-img" src={slide.webImg} alt={slide.alt} />
-            <img className="mob-img" src={slide.mobImg} alt={slide.alt} />
+            <Image 
+              className="web-img" 
+              src={slide.webImg} 
+              alt={slide.alt}
+              width={1920}
+              height={600}
+              priority
+              unoptimized
+            />
+            <Image 
+              className="mob-img" 
+              src={slide.mobImg} 
+              alt={slide.alt}
+              width={750}
+              height={800}
+              priority
+              unoptimized
+            />
           </a>
         </div>
       ))}

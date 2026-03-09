@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function BestSeller() {
   const bestSellers = [
     {
@@ -33,7 +35,13 @@ export default function BestSeller() {
         {bestSellers.map((item, index) => (
           <a key={index} href={item.href} className="best-seller-grid">
             <div className="best-seller-img">
-              <img src={item.image} alt={item.alt} />
+              <Image 
+                src={item.image} 
+                alt={item.alt}
+                width={400}
+                height={400}
+                unoptimized
+              />
             </div>
             <div className="best-seller-caption">{item.caption}</div>
           </a>
