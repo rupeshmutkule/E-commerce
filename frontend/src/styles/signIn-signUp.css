@@ -1,0 +1,1133 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "GothamBook", sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.body-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 9999;
+}
+
+input:focus {
+    outline: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.popup-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    overflow: auto;
+}
+
+@media (max-width: 1112px) {
+    .popup-overlay {
+        background-color: rgba(37, 37, 37, 0.7882352941);
+    }
+}
+
+.modal-logo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.modal-logo-section .modal-logo {
+    width: 110px;
+}
+
+@media (max-width: 600px) {
+    .modal-logo-section .modal-logo {
+        width: 25%;
+    }
+}
+
+.modal-logo-section .modal-logo img {
+    width: 100%;
+}
+
+.modal-logo-section .modal-close {
+    width: 14px;
+    height: 20px;
+    background: transparent url("/images/close-black.svg") no-repeat;
+    background-size: 100%;
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: -6px;
+    cursor: pointer;
+}
+
+@media (min-width: 1337px) {
+    .modal-logo-section .modal-close {
+        width: 18px;
+        height: 30px;
+    }
+}
+
+form.modal-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form.modal-form .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* The container */
+    /* Hide the browser's default checkbox */
+    /* Create a custom checkbox */
+    /* On mouse-over, add a grey background color */
+    /* When the checkbox is checked, add a blue background */
+    /* Create the checkmark/indicator (hidden when not checked) */
+    /* Show the checkmark when checked */
+    /* Style the checkmark/indicator */
+}
+
+form.modal-form .input-wrapper input.mob-input {
+    width: 53%;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4d4d4d;
+    border: 1px solid rgb(204, 204, 204);
+    height: 44px;
+    padding: 10px 8px 8px;
+}
+
+@media (min-width: 1337px) {
+    form.modal-form .input-wrapper input.mob-input {
+        font-family: "GothamBook", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 10px 8px 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    form.modal-form .input-wrapper input.mob-input {
+        width: 100%;
+    }
+}
+
+form.modal-form .input-wrapper input.mob-input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 8px rgba(255, 255, 255, 0);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 8px rgba(255, 255, 255, 0);
+}
+
+form.modal-form .input-wrapper input.mob-input::placeholder {
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #ccc;
+}
+
+@media (min-width: 1337px) {
+    form.modal-form .input-wrapper input.mob-input::placeholder {
+        font-family: "GothamBook", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+form.modal-form .input-wrapper .container {
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    color: #4d4d4d;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 1337px) {
+    form.modal-form .input-wrapper .container {
+        font-family: "GothamBook", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    form.modal-form .input-wrapper .container {
+        height: auto;
+        font-family: "GothamBook", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #6a6a6a;
+        padding-left: 35px;
+    }
+}
+
+form.modal-form .input-wrapper .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+form.modal-form .input-wrapper .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ab1e56;
+}
+
+form.modal-form .input-wrapper .container input:checked~.checkmark {
+    background-color: transparent;
+}
+
+form.modal-form .input-wrapper .checkmark:after {
+    content: "\2713";
+    position: absolute;
+    display: none;
+}
+
+form.modal-form .input-wrapper .container input:checked~.checkmark:after {
+    display: block;
+}
+
+form.modal-form .input-wrapper .container .checkmark:after {
+    left: 4px;
+    top: -2px;
+    width: 5px;
+    height: 10px;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ab1e56;
+}
+
+@media (max-width: 600px) {
+    form.modal-form .input-wrapper .container .checkmark:after {
+        line-height: 22px;
+    }
+}
+
+form.modal-form .input-wrapper .error-div {
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ab1e56;
+    padding: 15px 0 10px;
+}
+
+form.modal-form .input-wrapper .continue-btn {
+    width: auto;
+    background-color: #ab1e56;
+    color: #fff;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #ab1e56;
+    text-transform: capitalize;
+    padding: 10px 36px;
+    border-radius: 3px;
+    margin: 10px 0 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+form.modal-form .input-wrapper .continue-btn.login-btn {
+    width: 63%;
+}
+
+@media (max-width: 767px) {
+    form.modal-form .input-wrapper .continue-btn.login-btn {
+        width: 100%;
+    }
+}
+
+form.modal-form .input-wrapper .continue-btn:hover {
+    background-color: #fff;
+    color: #ab1e56;
+}
+
+@media (min-width: 1337px) {
+    form.modal-form .input-wrapper .continue-btn {
+        font-family: "GothamBook", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 8px 25px;
+    }
+}
+
+form.modal-form .input-wrapper #otp-input {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width: 540px) {
+    form.modal-form .input-wrapper #otp-input {
+        gap: 18px;
+    }
+}
+
+form.modal-form .input-wrapper #otp-input .otp-digit {
+    width: 65px;
+    height: 50px;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #696969;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form.modal-form .input-wrapper #otp-input .otp-digit .otp-digit:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form.modal-form .input-wrapper .resend-plot {
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #696969;
+    text-transform: capitalize;
+    text-align: center;
+    user-select: none;
+    margin: 10px 0 0;
+}
+
+form.modal-form .input-wrapper .resend-plot .resend-link {
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #696969;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+form.modal-form .input-wrapper .new-resend-plot .resend-link {
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #696969;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+.signin_resend-otp {
+    color: #ab1e56;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-resend-otp {
+    color: #ab1e56;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+form.modal-form .input-wrapper .resend-plot .resend-link.disabled {
+    cursor: not-allowed;
+}
+
+.login-modal-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.login-modal-wrapper .login-modal {
+    width: 35%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 7px solid #998659;
+    padding: 10px;
+    outline: 1px solid white;
+    z-index: 1;
+}
+
+@media (max-width: 1112px) {
+    .login-modal-wrapper .login-modal {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-modal-wrapper .login-modal {
+        width: 95%;
+    }
+}
+
+.login-modal-wrapper .login-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal-wrapper .modal-title {
+    width: 100%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #998659;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 1337px) {
+    .login-modal-wrapper .modal-title {
+        font-family: "GothamMedium", sans-serif;
+        font-weight: 300;
+        font-size: 41px;
+        padding: 25px 0;
+    }
+}
+
+.login-modal-wrapper .modal-title .otp-subtext .otp-number {
+    text-transform: lowercase;
+}
+
+.login-modal-wrapper .modal-title .otp-subtext {
+    display: block;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a3a3;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0 15px;
+}
+
+.login-modal-wrapper .create-acc-btn {
+    display: -webkit-flex;
+    color: #000;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.pwd-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media(max-width:450px) {
+    .pwd-login {
+        font-family: "GothamBook", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+.pwd-login .pwd-btn {
+    background-color: #fff;
+    color: #000;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: 0;
+    cursor: pointer;
+    padding: 0 7px;
+    border-right: 1px solid #dadada;
+    margin-right: 7px;
+}
+
+@media(max-width:400px) {
+    .pwd-login .pwd-btn {
+        font-family: "GothamMedium", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        padding: 0 3px;
+        margin-right: 2px;
+    }
+}
+
+.pwd-login .fb-button {
+    width: 22px;
+    height: 22px;
+    background: transparent url("/images/facebook-circular-logo.png") no-repeat;
+    background-size: 100%;
+    border: 0;
+    outline: 0;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pwd-login .google-btn {
+    width: 22px;
+    height: 22px;
+    background: transparent url("/images/google.png") no-repeat;
+    background-size: 100%;
+    border: 0;
+    outline: 0;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.con-txt {
+    text-align: right;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #3c3c3c;
+    width: 100%;
+}
+
+@media (max-width: 540px) {
+    .con-txt {
+        text-align: center;
+    }
+}
+
+.login-by-pwd {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.login-by-pwd .login-by-pwd-modal {
+    width: 45%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border: 3px solid #696969;
+    border-image: url("/images/lineimg-dbtn.png") 3 repeat;
+    padding: 10px;
+    outline: 12px solid #fff;
+}
+
+@media (max-width: 1112px) {
+    .login-by-pwd .login-by-pwd-modal {
+        width: 80%;
+    }
+}
+
+@media (max-width: 540px) {
+    .login-by-pwd .login-by-pwd-modal {
+        width: 90%;
+    }
+}
+
+.login-by-pwd .login-by-pwd-modal .modal-title {
+    width: 100%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #998659;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0px 0 12px;
+    position: relative;
+    background: #fff;
+}
+
+.login-by-pwd .login-by-pwd-modal .modal-title span {
+    background: white;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.login-by-pwd .login-by-pwd-modal .modal-title:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 38%;
+    left: 0;
+}
+
+.social-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4d4d4d;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+.social-login .social-login-btn {
+    width: auto;
+    color: #fff;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    background-color: #5a79b9;
+    border: 0;
+    padding: 2px 10px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 540px) {
+    .social-login .social-login-btn {
+        margin: 0 8px;
+        font-family: "GothamBook", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+.social-login .social-login-btn.google {
+    background-color: #d34836;
+}
+
+.popup-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4d4d4d;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.popup-footer .forgot-pwd-link {
+    color: #4d4d4d;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    background-color: #fff;
+    border: 0;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.popup-footer .forgot-pwd-link1 {
+    color: #4d4d4d;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    background-color: #fff;
+    border: 0;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.popup-footer .footer-paragraph {
+    color: #4d4d4d;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.popup-footer .footer-paragraph span {
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.retrieve-pwd-popup {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+
+.retrieve-pwd-popup .login-by-pwd-modal {
+    width: 45%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border: 3px solid #696969;
+    border-image: url("/images/lineimg-dbtn.png") 3 repeat;
+    padding: 10px;
+    outline: 12px solid #fff;
+}
+
+@media (max-width: 1112px) {
+    .retrieve-pwd-popup .login-by-pwd-modal {
+        width: 80%;
+    }
+}
+
+.retrieve-pwd-popup .modal-title {
+    width: 100%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #998659;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0px 0 12px;
+    position: relative;
+    background: #fff;
+}
+
+.retrieve-pwd-popup .modal-title span {
+    background: white;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.retrieve-pwd-popup .modal-title:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 38%;
+    left: 0;
+}
+
+.signup-popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9999;
+}
+
+@media (max-width: 600px) {
+    .signup-popup {
+        align-items: unset;
+    }
+}
+
+.signup-popup popup-overlay {
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.signup-popup .signup-popup-plot {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    top: 30px;
+    border: 7px solid #998659;
+    padding: 20px 10px 3px;
+    outline: 1px solid #fff;
+    overflow: auto;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 1112px) {
+    .signup-popup .signup-popup-plot {
+        width: 85%;
+        height: unset;
+        top: unset;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .signup-popup .signup-popup-plot {
+        width: 100%;
+        top: 10px;
+        margin: 0;
+        padding-bottom: 0;
+        max-width: 93%;
+        left: 0px;
+        padding: 10px 10px;
+        margin: 0 auto 20px;
+    }
+}
+
+.signup-popup .signup-popup-plot .modal-logo {
+    width: 164px;
+    height: 86px;
+}
+
+.signup-popup .signup-popup-plot .title-border {
+    width: 100%;
+    height: 38px;
+    position: relative;
+    border-bottom: 1px solid #000;
+    z-index: 0;
+}
+
+@media (min-width: 1337px) {
+    .signup-popup .signup-popup-plot .title-border {
+        height: 37px;
+    }
+}
+
+@media (max-width: 600px) {
+    .signup-popup .signup-popup-plot .title-border {
+        width: 95%;
+        border-bottom: 1px solid transparent;
+    }
+}
+
+.signup-popup .signup-popup-plot .title-border .signip-title {
+    display: inline-block;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #998659;
+    background-color: #fff;
+    position: absolute;
+    left: calc((100% - 522px) / 2);
+    text-align: center;
+    padding: 0 7px;
+}
+
+@media (max-width: 1300px) {
+    .signup-popup .signup-popup-plot .title-border .signip-title {
+        left: calc((100% - 522px) / 2);
+        font-family: "GothamMedium", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .signup-popup .signup-popup-plot .title-border .signip-title {
+        left: calc((100% - 307px) / 2);
+        font-family: "GothamMedium", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 16px;
+    }
+}
+
+.signup-popup .signup-popup-plot .title-border .signip-title span {
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    padding: 0 7px;
+}
+
+/*@media (min-width: 1337px) {
+  .signup-popup .signup-popup-plot .title-border .signip-title span {
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+  }
+}*/
+
+.signup-popup .signup-popup-plot form.modal-form {
+    margin-top: 45px;
+}
+
+@media (min-width: 1337px) {
+    .signup-popup .signup-popup-plot form.modal-form {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 1112px) {
+    .signup-popup .signup-popup-plot form.modal-form {
+        margin-top: 65px;
+    }
+}
+
+.signup-popup .signup-popup-plot form.modal-form input.mob-input {
+    max-width: 330px;
+    text-align: center;
+}
+
+.signup-popup .signup-popup-plot form.modal-form input.mob-input::placeholder {
+    text-align: center;
+}
+
+.signup-popup .signup-popup-plot form.modal-form .login-btn {
+    max-width: 330px;
+}
+
+.signup-popup .signup-popup-plot form.modal-form .container {
+    text-align: center;
+    height: unset;
+}
+
+.signup-popup .signup-popup-plot form.modal-form .login-btn {
+    width: 53%;
+    margin-bottom: 0;
+}
+
+@media(max-width:450px) {
+    .signup-popup .signup-popup-plot form.modal-form .login-btn {
+        width: 70%;
+    }
+}
+
+.signup-popup .signup-popup-plot .pwd-login {
+    margin-bottom: 0;
+}
+
+.signup-popup .signup-popup-plot .con-txt {
+    padding: 0;
+}
+
+.new-login-modal-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.new-login-modal-wrapper .new-login-modal {
+    width: 100%;
+    max-width: 35%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 7px solid #998659;
+    padding: 10px;
+    outline: 1px solid white;
+    z-index: 1;
+    position: relative;
+}
+
+@media (max-width: 1112px) {
+    .new-login-modal-wrapper .new-login-modal {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .new-login-modal-wrapper .new-login-modal {
+        max-width: 90%;
+    }
+}
+
+.new-login-modal-wrapper .new-login-content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-login-modal-wrapper .modal-title-wrap {
+    width: 100%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #998659;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 1337px) {
+    .new-login-modal-wrapper .modal-title-wrap {
+        font-family: "GothamMedium", sans-serif;
+        font-weight: 300;
+        font-size: 41px;
+        padding: 30px 0;
+    }
+}
+
+.new-login-modal-wrapper .modal-title-wrap .otp-subtext {
+    display: block;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a3a3;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0 15px;
+}
+
+.new-login-modal-wrapper .create-acc-btn {
+    width: 100%;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.new-login-modal-wrapper .new-resend-plot {
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #696969;
+    text-transform: capitalize;
+    text-align: center;
+    user-select: none;
+    margin: 10px 0;
+}
+
+.new-login-modal-wrapper .new-resend-plot .new-resend-link {
+    font-family: "GothamMedium", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #696969;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+.new-login-modal-wrapper .new-resend-plot .new-resend-link.disabled {
+    cursor: not-allowed;
+}
+
+.new-login-modal-wrapper .new-continue-btn {
+    width: auto;
+    background-color: #ab1e56;
+    color: #fff;
+    font-family: "GothamBook", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #ab1e56;
+    text-transform: capitalize;
+    padding: 10px 36px;
+    border-radius: 3px;
+    margin: 20px 0 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.new-login-modal-wrapper .new-continue-btn.login-btn {
+    width: 63%;
+}
+
+@media (max-width: 1112px) {
+    .new-login-modal-wrapper .new-continue-btn.login-btn {
+        width: 100%;
+    }
+}
+
+.new-login-modal-wrapper .new-continue-btn:hover {
+    background-color: #fff;
+    color: #ab1e56;
+}
+
+@media (min-width: 1337px) {
+    .new-login-modal-wrapper .new-continue-btn {
+        font-family: "GothamBook", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 8px 25px;
+    }
+}
+
+.signin_resend-otp {
+    margin: 0 5px;
+}
+
+/*# sourceMappingURL=signIn-signUp.css.map */

@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Checkout</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="title" content="Checkout" />
+    <meta name="keywords" content="Checkout" />
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="https://icmedianew.gumlet.io/pub/media/fermion/images/square2_1.png" />
+    <link rel="stylesheet" type="text/css" media="all" href='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/css/signIn-signUp.css?v=1.1992' />
+    <link rel="stylesheet" type="text/css" media="all" href='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/css/footer.css?v=1.1992' />
+    <link rel="stylesheet" type="text/css" media="all" href='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/css/font.css?v=1.1992' />
+    <link rel="stylesheet" type="text/css" href='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/css/slick.css?v=1.1992'>
+
+
+    <link rel="stylesheet" type="text/css" href='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/css/slick-theme.css?v=1.1992'>
+
+    <link rel="stylesheet" type="text/css" media="all" href='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/css/checkout.css?v=1.1992' />
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZW04LJGP4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FZW04LJGP4');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MP26CHDB');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+
+    <script>
+        var _paq = window._paq || [];
+        ! function(f, b, e, v, n, t, s)
+
+        {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '660563938777386');
+
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none"
+
+        src=https://www.facebook.com/tr?id=660563938777386&ev=PageView&noscript=1
+
+        /></noscript>
+
+    <!-- End Meta Pixel Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-993156156"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-993156156');
+    </script>
+</head>
+
+<body class="body-layout">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP26CHDB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- <link rel="import" href="../navbar.html"> -->
+    <div class="header">
+        <div class="logo"><a href="https://indiacircus.com/"><img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/logo-indiacircus_gray_new.svg'></a></div>
+        <div class="contact-details">
+            <a href="tel:02248931878">
+                <div class="contact"><img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/checkout-tel.png'> <span class="number">02248931878</span></div>
+            </a>
+            <div class="timing">09:30-18:30 IST (Mon-Sat)</div>
+            <div class="timing"><a href="mailto:support@indiacircus.com"> support@indiacircus.com</a></div>
+        </div>
+    </div>
+    <div class="upgrade-wrapper">
+        <input type="hidden" id="websitebaseUrl" value="https://indiacircus.com/">
+        <input type="hidden" id="deviceType" name="deviceType" value="desktop" />
+        <input type="hidden" value="generic" id="device_type" />
+        <input type="hidden" value="IN" id="store_side" />
+        <input type="hidden" value="₹" id="currency_symb" />
+        <input type="hidden" value="1" id="isCod">
+        <input type="hidden" value="1" id="isPrepaid">
+        <input type="hidden" id="login-user-email" value="">
+        <input type="hidden" id="currentPage" value="checkout_index">
+        <input type="hidden" id="hidden-user-email" value="">
+        <input type="hidden" id="hidden-user-contact-number" value="">
+        <input type="hidden" name="form_key" value="1kBschv3GsTwYWiz" />
+
+        <div id="ic_loader" style="position: fixed;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.1);z-index: 9999;top: 0;left: 0;display: flex;justify-content: center;">
+            <img style="margin: 0;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);" class="center-block" alt="loading.." src="/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/ajax-loader.gif">
+        </div>
+        <input type="hidden" id="oldcustomerflag" value="">
+        <input type="hidden" id="itemCount" value="1">
+        <input type="hidden" id="device" value="desktop">
+        <input type="hidden" id="customerId" value="0">
+        <input type="hidden" value="INR" id="curr_code" />
+        <input type="hidden" id="quoteId" value="2462965">
+        <input type="hidden" id="outOfStockProductCount" value="0">
+        <input type="hidden" id="isQuoteVirtual" value="0">
+        <input type="hidden" id="grandTotal" value="1439.0000">
+        <input type="hidden" id="coupon_code_hidden" value="">
+        <input type="hidden" id="quoteMaskedId" value="uWhRGjiFG9u6R48qyIwcHbxSHfOSL7dh">
+        <input type="hidden" id="discountAmount" value="0" />
+        <input type="hidden" id="isGiftvoucher" value="0" />
+        <input type="hidden" id="giftCardAmount" value="0" />
+        <input type="hidden" name="isLoggin" id="isLoggin" value="0">
+        <input type="hidden" name="giftCardId" id="giftCardId" value="0">
+        <input type="hidden" name="isEdit" id="isEdit" value="0">
+        <input type="hidden" value="1" id="rate">
+        <input type="hidden" value="199" id="min_codorder_total">
+        <input type="hidden" value="credit" id="section_type" />
+        <input type="hidden" value="" id="card_number" />
+        <input type="hidden" value="" id="card_name" />
+        <input type="hidden" value="" id="card_cvv" />
+        <input type="hidden" value="" id="card_exp" />
+        <input type="hidden" value="0" id="card_is_save" />
+        <input type="hidden" value="" id="card_type" />
+        <input type="hidden" value="" id="isDomestic_card_type" />
+        <input type="hidden" value="0" id="card_is_validate" />
+        <input type="hidden" value="0" id="card_number_valid" />
+        <input type="hidden" value="" id="selected_wallet" />
+        <input type="hidden" value="" id="payuPostData" />
+        <div class="checkout-wrap">
+            <div class="breadcrumb-plot">
+                <!-- <div class="breadcum">
+         <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Review & Payments</a></li>
+         </ul>
+         </div> -->
+            </div>
+            <div class="checkout-blog">
+                <div class="breadcum">
+                    <ul class="tabs">
+                        <li class="tab-link current head-1" data-tab="shippingtab-1"><a href="javascript:void(0);">Shipping</a></li>
+                        <li class="tab-link  head-2" data-tab="paymenttab-2"><a href="javascript:void(0);">Review & Payments</a></li>
+                    </ul>
+                </div>
+                <div class="back-to-cart">
+                    <a href="https://indiacircus.com/customcheckout/cart" class="back-cart">Back to cart</a>
+                </div>
+                <div class="checkout-section">
+                    <div class="left-section">
+                        <div class="checkoutSteps">
+                            <div class="contact-detail tab1 current" id="shippingtab-1">
+                                <div class="contact-address" id="contact-email-info">
+                                    <div class="head">
+                                        <div class="title">Contact Information</div>
+                                        <div class="login">Already have an account? <a href="#" class="ship-login"> Log in</a></div>
+                                    </div>
+
+                                    <div class="form-plot">
+                                        <form class="form">
+                                            <div class="block new-block">
+                                                <div class="field">
+                                                    <label class="label"></label>
+                                                    <div class="input ship-code">
+                                                        <input type="text" name="customer-firstname" class="customer-firstname input-text" value="">
+                                                        <div class="custom-placeholder">First Name<span>*</span></div>
+                                                    </div>
+                                                    <div class="form-error custom_first_name_error"></div>
+                                                </div>
+                                            </div>
+                                            <div class="block new-block">
+                                                <div class="field">
+                                                    <label class="label"></label>
+                                                    <div class="input ship-code">
+                                                        <input type="text" name="customer-lastname" class="customer-lastname input-text" value="">
+                                                        <div class="custom-placeholder">Last Name<span>*</span></div>
+                                                    </div>
+                                                    <div class="form-error custom_last_name_error"></div>
+                                                </div>
+                                            </div>
+                                            <div class="block new-block">
+                                                <div class="field">
+                                                    <label class="label"></label>
+                                                    <div class="input ship-code">
+                                                        <input type="text" name="customer-email" class="customer-email input-text" value="">
+                                                        <div class="custom-placeholder">Email <span>*</span></div>
+                                                    </div>
+                                                    <div class="form-error custom_email_error"></div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-number-wrap">
+                                                <div class="block">
+                                                    <div class="field">
+                                                        <div class="input ship-code">
+                                                            <input type="number" name="customer-mob" id="customer_user_mob" class="customer-mob input-text" pattern="\d{10}" maxlength="10" oninput="this.value = this.value.replace(/\D/g, '').slice(0, 10)" value="">
+                                                            <div class="check-num" style="display:none;"></div>
+                                                            <div class="custom-placeholder">Mobile <span>*</span></div>
+                                                        </div>
+                                                        <div class="mob-error"></div>
+                                                        <div class="custom-error"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="get-otp-wrap">
+                                                    <div class="get-otp-txt" id="checkout-otp" style="display:none;">Get OTP</div>
+                                                    <div class="verify-txt">Verify your contact details with simple OTP For smooth delivery process.</div>
+                                                </div>
+                                            </div>
+                                            <div class="email-offer">
+                                                <input type="checkbox" name="subscribe" id="subscribe" checked="checked">
+                                                <div class="email-me">I agree to receive important updates and promotional messages over WhatsApp, SMS, Email etc.</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="after-login-personal-information" style="display:none;">
+                                    <div class="personal-information-wrapper">
+                                        <div class="heading">
+                                            Contact information
+                                        </div>
+                                        <div class="informartion-block">
+                                            <div class="information-wrap">
+                                                <div class="info"></div>
+                                                <div class="info"></div>
+                                            </div>
+                                            <div class="information-wrap">
+                                                <div class="info num"></div>
+                                                <div class="info"></div>
+                                            </div>
+                                        </div>
+                                        <div class="link"> <a href="https://indiacircus.com/customer/account/edit">Click Here </a>to update contact information</div>
+                                    </div>
+                                </div>
+                                <div class="contact-address" id="guest-ship-bill-form">
+                                    <div class="head">
+                                        <div class="title">Shipping Address</div>
+                                    </div>
+                                    <div class="shipping-address" id="contact-ship-info">
+                                        <div class="form-plot">
+                                            <form class="form">
+                                                <div class="block">
+                                                    <div class="field">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="postcode" class="postcode input-text">
+                                                            <div class="custom-placeholder">Zip/Postal Code<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error postcode-err"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="block">
+                                                    <div class="field">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="firstname" class="firstname input-text">
+                                                            <div class="custom-placeholder">First Name<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error firstname-err"></div>
+                                                    </div>
+                                                    <div class="field">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="lastname" class="lastname input-text">
+                                                            <div class="custom-placeholder">Last Name<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error lastname-err"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="block">
+                                                    <div class="field address">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="addr1" class="addr1 input-text">
+                                                            <div class="custom-placeholder">Address1<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error addr1-err"></div>
+                                                    </div>
+                                                    <div class="field address">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="addr2" placeholder="Address2" class="addr2">
+                                                        </div>
+                                                        <div class="form-error addr2-err"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="block">
+                                                    <div class="field city">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="city" class="city input-text">
+                                                            <div class="custom-placeholder">City<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error city-err"></div>
+                                                    </div>
+                                                    <!-- <div class="field city">
+                                    <div class="input zip-code ship-code">
+                                       <input type="text" name="region_id" placeholder="State/Province*">
+                                    </div>
+                                    </div> -->
+                                                    <div class="field city">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="region" class="region input-text">
+                                                            <div class="custom-placeholder">State/Province<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error region-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="landmark" class="landmark input-text">
+                                                            <div class="custom-placeholder">Landmark<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error landmark-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="telephone" class="telephone input-text">
+                                                            <div class="custom-placeholder">Phone Number<span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error telephone-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input ship-code">
+                                                            <input type="text" name="dob" class="dob" placeholder="DOB" onkeydown="return false;" readonly>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error dob-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input zip-code ship-code">
+                                                            <!-- <input type="text" name="" placeholder="India*"> -->
+                                                            <select name="country_id" disabled>
+                                          <option value="IN">India</option>
+                                       </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="email-offer bill-different-address" style="display:flex;">
+                                        <div class="email-me">Bill to a different address </div>
+                                        <input type="checkbox" name="guest-bill-check" id="guest-bill-check" class="billing-checkbox">
+                                    </div>
+                                    <div class="contact-address" id="contact-bill-info" style="display:none;">
+                                        <div class="head">
+                                            <div class="title">Billing Address</div>
+                                        </div>
+                                        <div class="form-plot billing-address">
+                                            <form class="form">
+                                                <div class="block">
+                                                    <div class="field">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="postcode" class="postcode input-text">
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                            <div class="custom-placeholder">Zip/Postal Code <span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error postcode-err"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="block">
+                                                    <div class="field">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="firstname" class="firstname input-text">
+                                                            <div class="custom-placeholder">First Name <span>*</span></div>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error firstname-err"></div>
+                                                    </div>
+                                                    <div class="field">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="lastname" class="lastname input-text">
+                                                            <div class="custom-placeholder">Last Name <span>*</span></div>
+                                                        </div>
+                                                        <div class="form-error lastname-err"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="block">
+                                                    <div class="field address">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="addr1" class="addr1 input-text">
+                                                            <div class="custom-placeholder">Address1 <span>*</span></div>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error addr1-err"></div>
+                                                    </div>
+                                                    <div class="field address">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="addr2" class="addr2 input-text">
+                                                            <div class="custom-placeholder">Address2 <span></span></div>
+                                                        </div>
+                                                        <div class="form-error addr2-err"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="block">
+                                                    <div class="field city">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="city" class="city input-text">
+                                                            <div class="custom-placeholder">City <span>*</span></div>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error city-err"></div>
+                                                    </div>
+                                                    <!-- <div class="field city">
+                                    <div class="input zip-code bill-code">
+                                       <input type="text" name="region_id" placeholder="State/Province*">
+                                    </div>
+                                    </div> -->
+                                                    <div class="field city">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="region" class="region input-text">
+                                                            <div class="custom-placeholder">State/Province <span>*</span></div>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error region-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="landmark" class="landmark input-text">
+                                                            <div class="custom-placeholder">Landmark <span>*</span></div>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error landmark-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="telephone" class="telephone input-text">
+                                                            <div class="custom-placeholder">Phone Number <span>*</span></div>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error telephone-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input bill-code">
+                                                            <input type="text" name="dob" class="dob" placeholder="DOB" onkeydown="return false;" readonly>
+                                                            <!-- <p class="shipping-error-msg"></p> -->
+                                                        </div>
+                                                        <div class="form-error dob-err"></div>
+                                                    </div>
+                                                    <div class="field city">
+                                                        <div class="input zip-code bill-code">
+                                                            <!-- <input type="text" name="" placeholder="India*"> -->
+                                                            <select name="country_id" disabled>
+                                          <option value="IN">India</option>
+                                       </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="email-offer gift-note" id="guest-gift-note" style="display:flex;">
+                                        <div class="add-gift-note-wrap">
+                                            <form action="">
+                                                <div class="add-gift">
+                                                    <div class="email-me">
+                                                        <label>Add a gift note</label>
+                                                        <input type="checkbox" name="guest-gift-check" id="guest-gift-check" class="checkbox">
+                                                    </div>
+                                                </div>
+                                                <div class="gift-form">
+                                                    <div class="gift-summary" style="display:none">
+                                                        <div class="gift-message-summary">Message: <span class="message-summary"></span></div>
+                                                        <div class="gift-from-summary">From: <span class="from-summary"></span></div>
+                                                        <div class="gift-summary-action">
+                                                            <button class="gift-edit-btn" type="button">Edit</button>
+                                                            <button class="gift-delete-btn" type="button">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gift-card-content gift-form-wrap" style="display:none">
+                                                        <div class="gift-message-plot">
+                                                            <div class="gift-card-title gift-title">
+                                                                <span class="title">Gift Message</span>
+                                                            </div>
+                                                            <div class="character-len-txt gift-card-character-len"><span class="character-len">160</span>/160 characters</div>
+                                                        </div>
+                                                        <div class="input-block gift-card-field">
+                                                            <textarea class="gift-message" name="gift-message" rows="4" cols="50" placeholder="Enjoy your gift!"></textarea>
+                                                            <p class="gift-message_email_error" style="color:red"></p>
+                                                            <div class="input">
+                                                                <input type="text" name="gift-message-from" class="gift-message-from input-text">
+                                                                <div class="custom-placeholder">From<span>*</span></div>
+                                                                <p class="gift-message-from_email_error" style="color:red"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gift-action gift-btn-wrap">
+                                                            <button class="gift-update-btn" type="button" title="Update">Update</button>
+                                                            <button class="gift-cancel-btn" type="button" title="Cancel">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="email-offer-wrap">
+                                        <input type="checkbox" name="subscribe_terms" id="subscribe_terms" checked="checked">
+                                        <div class="email-me">By clicking Continue to Payment, you agree to create an account with us and confirm that you have read and accept our <a href="https://indiacircus.com/terms-of-use" target="_blank">Terms and Conditions</a> and
+                                            <a
+                                                href="https://indiacircus.com/privacy-policy" target="_blank">Privacy Policy.</a>
+                                        </div>
+                                    </div>
+                                    <div class="terms-err"></div>
+                                    <div class="payment-block">
+                                        <button class="payment-btn" id="payment-btn-guest" type="button">Continue To Payment</button>
+                                    </div>
+                                    <div class="form-error checkout-continue"></div>
+                                    <!-- <div class="payment-block">
+                        <button class="payment-btn" id="payment-btn-guest" type="button">Continue To Payment</button>
+                     </div>
+                     <div class="form-error checkout-continue"></div> -->
+                                </div>
+                                <div class="contact-address customer-address_info">
+                                    <input type="hidden" id="total-add-count" value="0">
+                                    <input type="hidden" id="logged-in-email" value="">
+                                    <div class="login-addresses-plot">
+                                        <div class="login-addres">
+                                            <div id="address_list_div">
+                                            </div>
+                                            <div class="adress-part add-newaddress">
+                                                <div class="address-plot">
+                                                    <div class="image-pod">
+                                                        <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/add-more.png'>
+                                                    </div>
+                                                    <div class="new-address">New Address</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="email-offer gift-note" id="login-gift-note" style="display:flex;">
+                                        <div class="add-gift-note-wrap">
+                                            <form action="">
+                                                <div class="add-gift">
+                                                    <label>Add a gift note</label>
+                                                    <input type="checkbox" name="login-gift-check" id="login-gift-check" class="checkbox">
+                                                </div>
+                                                <div class="gift-form">
+                                                    <div class="gift-summary" style="display:none">
+                                                        <div class="gift-message-summary">Message: <span class="message-summary"></span></div>
+                                                        <div class="gift-from-summary">From: <span class="from-summary"></span></div>
+                                                        <div class="gift-summary-action">
+                                                            <button class="gift-edit-btn" type="button">Edit</button>
+                                                            <button class="gift-delete-btn" type="button">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gift-card-content gift-form-wrap" style="display:none">
+                                                        <div class="gift-message-plot">
+                                                            <div class="gift-card-title gift-title">
+                                                                <span class="title">Gift Message</span>
+                                                            </div>
+                                                            <div class="character-len-txt gift-card-character-len"><span class="character-len">160</span>/160 characters</div>
+                                                        </div>
+                                                        <div class="input-block gift-card-field">
+                                                            <textarea class="gift-message" name="gift-message" rows="4" cols="50" placeholder="Enjoy your gift!"></textarea>
+                                                            <p class="gift-message_email_error" style="color:red"></p>
+                                                            <div class="input">
+                                                                <input type="text" name="gift-message-from" class="gift-message-from input-text">
+                                                                <div class="custom-placeholder">From<span>*</span></div>
+                                                                <p class="gift-message-from_input-textemail_error" style="color:red"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gift-action gift-btn-wrap">
+                                                            <button class="gift-update-btn" type="button" title="Update">Update</button>
+                                                            <button class="gift-cancel-btn" type="button" title="Cancel">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="payment-block">
+                                        <button class="payment-btn" id="payment-btn-login" type="button">Continue To Payment</button>
+                                    </div>
+                                    <div class="form-error checkout-continue"></div>
+                                    <!-- <div class="payment-block">
+                        <button class="payment-btn" id="payment-btn-login" type="button">Continue To Payment</button>
+                     </div>
+                     <div class="form-error checkout-continue"></div> -->
+                                </div>
+                            </div>
+                            <div class="contact-detail payment-method-tab tab1" id="paymenttab-2">
+                                <div class="payment-method-plot">
+                                    <div class="head">
+                                        <div class="title">
+                                            Select Payment method
+                                        </div>
+                                    </div>
+                                    <div class="cod-shipping" style="display:flex;">
+                                        <div class="cod">
+                                            Cod available on order above ₹199 </div>
+                                        <div class="free-shipping">
+                                            Free Shipping. Expected delivery in 4-5 days across India.
+                                        </div>
+                                        <!--<div class="free-shipping">
+                           Please expect slight delay in delivery due to surge in orders.
+                        </div>-->
+                                        <div class="free-shipping payment-pg-err" style="display:none;color:red;">
+                                            Free Shipping. Expecteddelivery in 4-5 days across India.
+                                        </div>
+                                    </div>
+                                    <div class="payment-method">
+                                        <div class="money-payment">
+                                            <div class="money-block">
+                                                <div class="left-block">
+                                                    <div class="payment-option">
+                                                        <div class="option resp-accordion active open" id="credit" date-payment="credit-tab">
+                                                            Credit Card
+                                                        </div>
+                                                        <div class="option resp-accordion" id="debit" date-payment="debit-tab">
+                                                            Debit Card
+                                                        </div>
+                                                        <div class="option resp-accordion" id="netbank" date-payment="netbank-tab">
+                                                            Net Banking
+                                                        </div>
+
+                                                        <div class="option resp-accordion" id="cod-option" date-payment="cod-tab">
+                                                            Cash on Delivery
+                                                        </div>
+                                                        <!-- <div class="option resp-accordion" id="cod" date-payment="cod-tab">
+                                       Cash on Delivery
+                                    </div> -->
+                                                        <!-- <div class="option resp-accordion" id="wallet" date-payment="wallet-tab">
+                                       Wallets
+                                    </div> -->
+                                                        <div class="option resp-accordion" id="icgiftvoucher" date-payment="icgiftvoucher-tab">
+                                                            Gift Voucher
+                                                        </div>
+                                                        <div class="option resp-accordion" id="wallet" date-payment="wallet-tab">
+                                                            Wallets
+                                                        </div>
+                                                        <div class="option resp-accordion" id="upi" date-payment="upi-tab">
+                                                            UPI
+                                                        </div>
+                                                        <div class="option resp-accordion" id="emi" date-payment="emi-tab">
+                                                            EMI
+                                                        </div>
+                                                        <!-- <div class="option resp-accordion" id="icgiftvoucher" date-payment="icgiftvoucher-tab">
+                                       Gift Voucher
+                                    </div> -->
+                                                        <!-- <div class="option resp-accordion" id="upi" date-payment="upi-tab">
+                                       UPI
+                                    </div>
+                                    <div class="option resp-accordion" id="emi" date-payment="emi-tab">
+                                       EMI
+                                    </div> -->
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="newCardSection"></div>
+                                                    <!-- <div class="card-slot method-tab-content active" id="credit-tab"> -->
+                                                    <div class="card-slot method-tab-content active" id="credit-tab">
+                                                        <!-- <div class="slot-title open"> -->
+                                                        <div class="slot-title open">
+                                                            Credit Card
+                                                        </div>
+                                                        <!-- <div class="credit-block" style="display:block;"> -->
+                                                        <div class="credit-block" style="display:block;">
+                                                            <div class="error-plot card_payment_error" id="creditcard_payment_error" style="display: none;">
+                                                            </div>
+                                                            <div class="select-card-title">
+                                                                Select your credit card
+                                                            </div>
+                                                            <div class="credit-blog">
+                                                                <label class="credit-option">
+                                             <div class="credit-type radio-inline">
+                                                <input type="radio" id="visa" value="visa" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                                <label class="credit-option">
+                                             <div class="credit-type radio-inline">
+                                                <input type="radio" id="master" value="mast" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img master-card">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                                <label class="credit-option">
+                                             <div class="credit-type radio-inline">
+                                                <input type="radio" id="american" value="rupay" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img rupay">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                                <label class="credit-option">
+                                             <div class="credit-type radio-inline">
+                                                <input type="radio" id="maestro" value="maes" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img maestero-card">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                                <label class="credit-option">
+                                             <div class="credit-type radio-inline">
+                                                <input type="radio" id="amex" value="amex" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img american-express">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                            </div>
+                                                            <div class="card-details">
+                                                                <div class="form-input">
+                                                                    <div class="input">
+                                                                        <label>Card Holder's Name</label>
+                                                                        <input type="text" maxlength="60" onkeypress="return fnNotNumeric(event);" id="credit_cardholder_name" name="" placeholder="Valid Card Holder Name *">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-input">
+                                                                    <div class="input">
+                                                                        <label>Card Number</label>
+                                                                        <input type="text" maxlength="19" onkeypress="return fnNotAlphabet(event);" id="credit_cardholder_no" autocomplete="cc-number" name="" placeholder="Valid Card Number" class="card-number">
+                                                                        <div class="card-icon">
+                                                                            <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/credit-card.png' />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-block">
+                                                                    <div class="form-input card-expired">
+                                                                        <div class="input">
+                                                                            <label>Card Expired Date</label>
+                                                                            <input type="text" maxlength="5" onkeypress="return fnNotAlphabet(event);" id="credit_cardholder_expiry" autocomplete="cc-exp" name="" placeholder="MM/YY">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-input cvv">
+                                                                        <div class="input">
+                                                                            <label>Card CVV</label>
+                                                                            <input type="hidden" id="credit_cardholder_cvv_check" name="" value="">
+                                                                            <input type="text" class="password masked masked" maxlength="3" onkeypress="return fnNotAlphabet(event);" id="credit_cardholder_cvv" autocomplete="off" name="" placeholder="CVV">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="access-point">
+                                                                <button onclick="placeOrderIC('payu')" type="submit" class="button dont-btn primary"><span>Pay Now</span></button>
+                                                                <div class="ooserr" style="color:red;"></div>
+                                                                <!-- <div class="button dont-btn primary">
+                                             PAY NOW
+                                          </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slot method-tab-content" id="debit-tab">
+                                                        <div class="slot-title">
+                                                            Debit Card
+                                                        </div>
+                                                        <div class="debit-block">
+                                                            <div class="error-plot card_payment_error" id="debitcard_payment_error" style="display: none;">
+                                                            </div>
+                                                            <div class="select-card-title">
+                                                                Select your Debit Card
+                                                            </div>
+                                                            <div class="debit-blog">
+                                                                <label class="debit-option">
+                                             <div class="debit-type radio-inline">
+                                                <input type="radio" id="visa" value="visa" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                                <label class="debit-option">
+                                             <div class="debit-type radio-inline">
+                                                <input type="radio" id="master" value="mast" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img master-card">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                                <label class="debit-option">
+                                             <div class="debit-type radio-inline">
+                                                <input type="radio" id="american" value="rupay" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img rupay">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                                <label class="debit-option">
+                                             <div class="debit-type radio-inline">
+                                                <input type="radio" id="maestro" value="maes" name="radioInline">
+                                                <div class="radio"></div>
+                                                <div class="visa-img maestero-card">
+                                                </div>
+                                             </div>
+                                          </label>
+                                                            </div>
+                                                            <div class="card-details">
+                                                                <div class="form-input">
+                                                                    <div class="input">
+                                                                        <label>Card Holder's Name</label>
+                                                                        <input type="text" maxlength="60" onkeypress="return fnNotNumeric(event);" id="debit_cardholder_name" name="" placeholder="Valid Card Holder Name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-input">
+                                                                    <div class="input">
+                                                                        <label>Card Number</label>
+                                                                        <input type="text" name="" id="debit_cardholder_no" maxlength="19" onkeypress="return fnNotAlphabet(event);" placeholder="Valid Card Number">
+                                                                        <div class="card-icon">
+                                                                            <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/credit-card.png' alt="credit-card">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-block">
+                                                                    <div class="form-input card-expired">
+                                                                        <div class="input">
+                                                                            <label>Card Expired Date</label>
+                                                                            <input type="text" name="" maxlength="5" onkeypress="return fnNotAlphabet(event);" id="debit_cardholder_expiry" autocomplete="cc-exp" placeholder="MM/YY">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-input cvv">
+                                                                        <div class="input">
+                                                                            <label>Card CVV</label>
+                                                                            <input type="hidden" id="debit_cardholder_cvv_check" name="" value="">
+                                                                            <input type="text" name="" maxlength="3" onkeypress="return fnNotAlphabet(event);" id="debit_cardholder_cvv" placeholder="CVV" autocomplete="off" value="" class="password  masked masked" placeholder="CVV">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="access-point">
+                                                                <button onclick="placeOrderIC('payu')" type="submit" class="button dont-btn primary"><span>Pay Now</span></button>
+                                                                <div class="ooserr" style="color:red;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slot method-tab-content" id="netbank-tab">
+                                                        <div class="slot-title">
+                                                            Net Banking
+                                                        </div>
+                                                        <div class="net-banking">
+                                                            <div class="error-plot card_payment_error" id="netbank_payment_error" style="display: none;">
+                                                            </div>
+                                                            <div class="net-option">
+                                                                <div class="form-input error">
+                                                                    <!-- <label>All Other Banks</label> -->
+                                                                    <div class="select">
+                                                                        <select id="netbank_list" placeholder="Select Account">
+                                                   <option value="" selected disabled hidden>Select Account</option>
+                                                   <option value="ALLB">Allahabad Bank</option>
+                                                   <option value="ADBB">Andhra Bank</option>
+                                                   <option value="AXIB">AXIS Bank</option>
+                                                   <option value="BBKB">Bank of Bahrain and Kuwait</option>
+                                                   <option value="BBCB">Bank of Baroda - Corporate Banking</option>
+                                                   <option value="BBRB">Bank of Baroda - Retail Banking</option>
+                                                   <option value="BOIB">Bank of India</option>
+                                                   <option value="BOMB">Bank of Maharashtra</option>
+                                                   <option value="BMNN">Bhartiya Mahila Bank</option>
+                                                   <option value="CABB">Canara Bank</option>
+                                                   <option value="CSBN">Catholic Syrian Bank</option>
+                                                   <option value="CBIB">Central Bank of India</option>
+                                                   <option value="CITIRDR">Citi Netbanking</option>
+                                                   <option value="CITNB">Citibank Netbanking</option>
+                                                   <option value="CUBB">City Union Bank</option>
+                                                   <option value="CRPB">Corporation Bank</option>
+                                                   <option value="CSMSNB">Cosmos Bank</option>
+                                                   <option value="DBSB">DBS Bank</option>
+                                                   <option value="DCBCORP">DCB Bank - Corporate Netbanking </option>
+                                                   <option value="DCBB">DCB Bank Limited</option>
+                                                   <option value="DENN">Dena Bank</option>
+                                                   <option value="DSHB">Deutsche Bank</option>
+                                                   <option value="DCBB">Development Credit Bank</option>
+                                                   <option value="DLSB">Dhanlaxmi Bank</option>
+                                                   <option value="FEDB">Federal Bank</option>
+                                                   <option value="HDFB">HDFC Bank</option>
+                                                   <option value="ICIB">ICICI NetBanking</option>
+                                                   <option value="IDBB">IDBI Bank</option>
+                                                   <option value="IDFCNB">IDFC Netbanking</option>
+                                                   <option value="INDB">Indian Bank</option>
+                                                   <option value="INOB">Indian Overseas Bank</option>
+                                                   <option value="IOB">Indian Overseas Bank</option>
+                                                   <option value="INIB">IndusInd Bank</option>
+                                                   <option value="INGB">ING Vyasa Bank</option>
+                                                   <option value="INGB">ING Vysya Bank (now Kotak)</option>
+                                                   <option value="JAKB">Jammu and Kashmir Bank</option>
+                                                   <option value="JSBNB">Janata Sahakari Bank Pune</option>
+                                                   <option value="KRKB">Karnataka Bank Ltd</option>
+                                                   <option value="KRVBC">Karur Vysya - Corporate Netbanking</option>
+                                                   <option value="KRVB">Karur Vysya - Retail Netbanking</option>
+                                                   <option value="162B">Kotak Mahindra Bank</option>
+                                                   <option value="LVBD">Lakshmi Vilas Bank</option>
+                                                   <option value="LVCB">Lakshmi Vilas Bank - Corporate Netbanking</option>
+                                                   <option value="LVRB">Lakshmi Vilas Bank - Retail Netbanking</option>
+                                                   <option value="OBCB">Oriental Bank of Commerce</option>
+                                                   <option value="PMNB">Punjab And Maharashtra Co-operative Bank Limited</option>
+                                                   <option value="PSBNB">Punjab And Sind Bank</option>
+                                                   <option value="CPNB">Punjab National Bank - Corporate Banking</option>
+                                                   <option value="PNBB">Punjab National Bank - Retail Banking</option>
+                                                   <option value="RTN">Ratnakar Bank</option>
+                                                   <option value="RYBS">Royal Bank of Scotland</option>
+                                                   <option value="SRSWT">Saraswat Bank</option>
+                                                   <option value="SVCB">Shamrao Vithal Co-operative Bank Ltd.</option>
+                                                   <option value="SVCNB">Shamrao Vithal Co-operative Bank Ltd.</option>
+                                                   <option value="SOIB">South Indian Bank</option>
+                                                   <option value="SDCB">Standard Chartered Bank</option>
+                                                   <option value="SBBJB">State Bank of Bikaner and Jaipur</option>
+                                                   <option value="SBHB">State Bank of Hydrabad</option>
+                                                   <option value="SBIB">State Bank of India</option>
+                                                   <option value="SBMB">State Bank of Mysore</option>
+                                                   <option value="SBPB">State Bank of Patiala</option>
+                                                   <option value="SBTB">State Bank of Travancore</option>
+                                                   <option value="SYDB">Syndicate Bank</option>
+                                                   <option value="SYNDB">Syndicate Bank</option>
+                                                   <option value="TMBB">Tamilnad Mercantile Bank</option>
+                                                   <option value="BHNB">The Bharat Co-op. Bank Ltd</option>
+                                                   <option value="TBON">The Nainital Bank</option>
+                                                   <option value="UCOB">UCO Bank</option>
+                                                   <option value="UBIBC">Union Bank - Corporate Netbanking</option>
+                                                   <option value="UBIB">Union Bank - Retail Netbanking</option>
+                                                   <option value="UNIB">United Bank of India</option>
+                                                   <option value="VJYB">Vijaya Bank</option>
+                                                   <option value="YESB">Yes Bank</option>
+                                                </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="access-point">
+                                                                <button onclick="placeOrderIC('payu')" type="submit" class="button dont-btn primary"><span>Pay Now</span></button>
+                                                                <div class="ooserr" style="color:red;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card-slot method-tab-content" id="cod-tab">
+                                                        <div class="slot-title">
+                                                            Cash On Delivery
+                                                        </div>
+                                                        <div class="cashon-delivery-block">
+                                                            <div class="access-point">
+                                                                <button class="button dont-btn primary" onclick="placeOrderIC('cashondelivery')">Place Order</button>
+                                                                <div class="ooserr" style="color:red;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- <div class="card-slot method-tab-content" id="cod-tab">
+                                    <div class="slot-title">
+                                       Cash On Delivery
+                                    </div>
+                                    <div class="cashon-delivery-block">
+                                       <div class="access-point">
+                                          <button class="button dont-btn primary" onclick="placeOrderIC('cashondelivery')">Place Order</button>
+                                       </div>
+                                    </div>
+                                 </div> -->
+                                                    <!-- <div class="card-slot method-tab-content" id="wallet-tab">
+                                    <div class="slot-title">
+                                       Wallets
+                                    </div>
+                <div class="wallet-block">
+                                      <div class="error-plot card_payment_error" id="wallet_payment_error" style="display: none;"></div>
+                                       <div class="select-card-title">
+                                          Popular Wallets
+                                       </div>
+                                       <div class="wallet-blog">
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="airtel-money" value="airtel-money" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel">
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="Amazon-pay" value="Amazon-pay" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel amazon-pay">
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="Freecharge" value="Freecharge" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel freecharge">
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="Payzapp" value="Payzapp" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel payzapp">
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="ITZ-cash" value="ITZ-cash" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel itscash">
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="Ola-money" value="Ola-money" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel olamoney">
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="Oxigen" value="Oxigen" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel oxigen">
+                                                </div>
+                                             </div>
+                                          </label>
+                                          <label class="wallet-option">
+                                             <div class="wallet-type">
+                                                <input type="radio" id="Phonepe" value="Phonepe" name="radioInlineWallet">
+                                                <div class="radio"></div>
+                                                <div class="airtel phonepe">
+                                                </div>
+                                             </div>
+                                          </label>
+                                       </div>
+                                       <div class="access-point">
+                                          <button onclick="placeOrderIC('payu')" type="button" class="button dont-btn primary"><span>Place Order</span></button>                                          
+                                      <div class="ooserr" style="color:red;"></div>
+                                      </div>
+                                    </div>
+                                 </div> -->
+                                                    <div class="card-slot method-tab-content" id="wallet-tab">
+                                                        <div class="slot-title">
+                                                            Wallets
+                                                        </div>
+                                                        <div class="wallet-block">
+                                                            <div class="error-plot card_payment_error" id="wallet_payment_error" style="display: none;"></div>
+                                                            <div class="select-card-title">
+                                                                Popular Wallets
+                                                            </div>
+                                                            <div class="wallet-blog">
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="airtel-money" value="airtel-money" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="Amazon-pay" value="Amazon-pay" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel amazon-pay">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="Freecharge" value="Freecharge" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel freecharge">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="Payzapp" value="Payzapp" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel payzapp">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="ITZ-cash" value="ITZ-cash" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel itscash">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="Ola-money" value="Ola-money" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel olamoney">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="Oxigen" value="Oxigen" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel oxigen">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                                <label class="wallet-option">
+                                                         <div class="wallet-type">
+                                                            <input type="radio" id="Phonepe" value="Phonepe" name="radioInlineWallet">
+                                                            <div class="radio"></div>
+                                                            <div class="airtel phonepe">
+                                                            </div>
+                                                         </div>
+                                                      </label>
+                                                            </div>
+                                                            <div class="access-point">
+                                                                <button onclick="placeOrderIC('payu')" type="button" class="button dont-btn primary"><span>Place Order</span></button>
+                                                                <div class="ooserr" style="color:red;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card-slot method-tab-content" id="icgiftvoucher-tab">
+                                                        <div class="slot-title">
+                                                            Gift Voucher
+                                                        </div>
+                                                        <div class="gift-vochure-block">
+                                                            <div class="card-details">
+                                                                <div class="form-input">
+                                                                    <div class="input">
+                                                                        <label>Please enter Gift Card details here to redeem</label>
+                                                                        <input type="text" id="icgiftvoucher_code" name="" value="" placeholder="xxxx-xxxxx-xxxx">
+                                                                    </div>
+                                                                    <div class="form-error icgiftvoucher-error"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="access-point">
+                                                                <button type="button" class="button dont-btn primary gift-voucher-btn" style="margin-top: 25px; display:block;" data-role="add" id="add-gift-code"><span>Add Gift Card</span></button>
+
+                                                                <button type="button" class="button dont-btn primary gift-voucher-btn" style="margin-top: 25px; display:none;" data-role="remove" id="remove-gift-code"><span>Remove Gift Card</span></button>
+
+                                                                <button type="button" onclick="placeOrderIC('free')" class="button dont-btn primary gift-voucher-btn" style="margin-top: 25px; display:none;" data-role="order-place" id="gift-code-order-place"><span>Order Place</span></button>
+
+                                                                <!-- <button type="button" class="button dont-btn primarygift-voucher-btn" style="margin-top: 25px;" data-role="add" id="add-gift-code"><span>Add Gift Card</span></button> 
+                                                      <button type="button" class="button dont-btn primarygift-voucher-btn" style="margin-top: 25px;" data-role="remove" id="remove-gift-code" style="display:none;"><span>Remove Gift Card</span></button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slot method-tab-content" id="upi-tab">
+                                                        <div class="slot-title">
+                                                            UPI
+                                                        </div>
+                                                        <div class="upi-block">
+                                                            <div class="card-details">
+                                                                <div class="form-input">
+                                                                    <div class="input">
+                                                                        <label>VPA/UPI ID</label>
+                                                                        <input type="text" name="" id="upi_vpa_value" placeholder="VPA/UPI ID">
+                                                                        <div class="error-plot card_payment_error" id="upi_error" style="display: none;">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="access-point">
+                                                                <button onclick="placeOrderIC('payu')" type="button" class="button dont-btn primary"><span>Place Order</span></button>
+                                                                <div class="ooserr" style="color:red;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- intent old -->
+
+                                                    <div class="card-slot method-tab-content" id="emi-tab">
+                                                        <div class="slot-title">
+                                                            EMI
+                                                        </div>
+                                                        <div class="emi-block">
+                                                            <div class="card-details">
+                                                                <div class="para">
+                                                                    <p>
+                                                                        EMI order available above ₹ 3000/-
+                                                                    </p>
+                                                                    <p>
+                                                                        You will be redirected to the Payu checkout page to pay easy installments with your preferred bank when you place an order.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="access-point">
+                                                                <button onclick="placeOrderIC('payu')" type="button" class="button dont-btn primary"><span>Place Order</span></button>
+                                                                <div class="ooserr" style="color:red;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="card-slot method-tab-content" id="icgiftvoucher-tab">
+                                    <div class="slot-title">
+                                       Gift Voucher
+                                    </div>
+                                    <div class="gift-vochure-block">
+                                       <div class="card-details">
+                                          <div class="form-input">
+                                             <div class="input">
+                                                <label>Please enter Gift Card details here to redeem</label>
+                                                <input type="text" id="icgiftvoucher_code" name="" placeholder="xxxx-xxxxx-xxxx">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="access-point">
+                                          <button type="button" class="button dont-btn primary gift-voucher-btn" style="margin-top: 25px;" data-role="add"><span>Add Gift Card</span></button>                                        
+                                       </div>
+                                    </div>
+                                 </div> -->
+                                                    <!--  <div class="card-slot method-tab-content" id="upi-tab">
+                                    <div class="slot-title">
+                                       UPI
+                                    </div>
+                                    <div class="upi-block">
+                                       <div class="card-details">
+                                          <div class="form-input">
+                                             <div class="input">
+                                                <label>VPA/UPI ID</label>
+                                                <input type="text" name="" id="upi_vpa_value"  placeholder="VPA/UPI ID">
+                                                <div class="error-plot card_payment_error" id="upi_error" style="display: none;">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="access-point">
+                                          <button onclick="placeOrderIC('payu')" type="button" class="button dont-btn primary"><span>Place Order</span></button>                                         
+                                       <div class="ooserr" style="color:red;"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-slot method-tab-content" id="emi-tab">
+                                    <div class="slot-title">
+                                       EMI
+                                    </div>
+                                    <div class="emi-block">
+                                       <div class="card-details">
+                                          <div class="para">
+                                             <p>
+                                                EMI order available above Rs 3000/-
+                                             </p>
+                                             <p>
+                                                You will be redirected to the Payu checkout page to pay easy installments with your preferred bank when you place an order.
+                                             </p>
+                                          </div>
+                                       </div>
+                                       <div class="access-point">
+                                          <button onclick="placeOrderIC('payu')" type="button" class="button dont-btn primary"><span>Place Order</span></button>
+                 <div class="ooserr" style="color:red;"></div>
+                                       </div>
+                                    </div>
+                                 </div> -->
+                                                </div>
+                                                <div id="nopayment-tab" style="display:none;">No Payment methods are available </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment-tc">
+                                        <label class="container">
+                        <input type="checkbox" checked="checked" id="whatsAppOppt">
+                        <span class="checkmark"></span>
+                        I agree to receive important updates and promotional messages over WhatsApp, SMS, Email etc.
+                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ic-coupon-code-plot">
+                        <div class="checkout-coupon" style="display: block;">
+                            <div class="coupon-code-form">
+                                <div class="coupon-form">
+                                    <div class="coupon">
+                                        <div class="coupon-image"><img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/coupon.svg'></div>
+                                        <div class="apply-coupon">Apply Coupons</div>
+                                    </div>
+                                    <div class="apply-btn">
+                                        <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/black-back-btn.png'>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-coupon-remove" style="display: none;">
+                            <div class="coupon-code-form">
+                                <div class="coupon-form">
+                                    <div class="coupon">
+                                        <div class="coupon-details">
+                                            <div class="detail-wrap">
+                                                <div class="coupon-image"><img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/coupon.svg'></div>
+                                                <div class="coupon-code-box"></div>
+                                            </div>
+                                            <div class="appy-coupon-content"></div>
+                                        </div>
+                                        <div class="remove remove-coupon-code" id="removeCouponCode">Remove</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-summary">
+                            <div class="total-summary">
+                                <div class="head">
+                                    <div class="title">Order Summary</div>
+                                </div>
+                                <div class="billing-block">
+                                    <div class="order-detail">
+                                        <div class="totals">Cart Subtotal</div>
+                                        <div class="amount cart-subtotal-amount">₹ 1 439</div>
+                                    </div>
+                                    <div class="order-detail" id="discount">
+                                        <div class="totals discount-amount-msg">Discount</div>
+                                        <div class="amount discount-amount">₹ 0</div>
+                                    </div>
+
+                                    <div class="order-detail shipping-excl" style="display:none;"></div>
+                                    <!--  -->
+                                    <div class="order-detail" id="giftcard-detail">
+                                        <div class="totals gift-card"></div>
+                                        <div class="amount gift-card-amount"></div>
+                                    </div>
+
+                                </div>
+                                <div class="total-section">
+                                    <div class="tottal">
+                                        <div class="total-text">Order Total</div>
+                                        <div class="grand-total">₹ 1 439 <span class="emi-text">EMI Options Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-checkout">
+                            <div class="cart-product">
+                                <div class="head">
+                                    <div class="title">Your Item</div>
+                                </div>
+                                <div class="product-cart">
+                                    <div class="product product_id-15244" data-product-id="15244" data-product-name="Aureolin Luxurious Drape Cushion Cover">
+                                        <input type='hidden' value='{"action":"https:\/\/indiacircus.com\/checkout\/cart\/delete\/","data":{"id":"2108318","uenc":"aHR0cHM6Ly9pbmRpYWNpcmN1cy5jb20vY3VzdG9tY2hlY2tvdXQvaW5kZXg_ZXE9Z2VuZXJpYyZjbnRyeWlkPUlOJmNpPUlOJmNjPUlOUg~~"}}' id='sidebar_remove_item_2108318'
+                                        /> <input type="hidden" id="item_count" value="1">
+                                        <div class="image-plot" style=";"><img src="https://icmedianew.gumlet.io/pub/media/catalog/product/cache/f59cbf1789d8ff9fa1b891b4930eea13/i/n/india-circus-by-krsnaa-mehta-aureolin-luxurious-drape-cushion-cover-52121512sd01826-3.jpg" style="width:100%;"></div>
+                                        <div class="content">
+                                            <div class="cont">
+                                                <div class="discrip">Aureolin Luxurious Drape Cushion Cover </div>
+                                                <div class="price">
+                                                    <span class="actual-price">₹1439</span>
+                                                    <span class="dis-price">₹3599</span> </div>
+
+                                                <!-- <div class="view">View</div> -->
+                                            </div>
+                                            <div class="remove remove_item_id_2108318"><img src="/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/delete.svg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-address" style="display:none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coupon-popup">
+            <div class="popup-overlay"></div>
+            <div class="coupon-pop-plot">
+                <div class="head">
+                    <div class="title">APPLY COUPON</div>
+                    <div class="close">
+                        Close
+                        <!-- <img src="skin/images/close-black.svg"> -->
+                    </div>
+                </div>
+                <div class="coupon-code-form">
+                    <form class="coupon-form">
+                        <div class="coupon">
+                            <div class="form-input">
+                                <input type="text" name="coupon-code" class="coupon-code" placeholder="Enter discount code" value="">
+                            </div>
+                            <div class="apply-btn">
+                                <a href="" class="apply " id="applyCouponCode">Apply</a>
+                            </div>
+                        </div>
+                        <div class="coupon-error"></div>
+                        <div class="coupon-success"></div>
+                    </form>
+                </div>
+                <div class="coupon-base-container">
+                    <div class="coupon-title">COUPONS NOT APPLICABLE ON YOUR CART</div>
+                    <div class="coupon-checkout-plot">
+                        <div class="coupon-base-checkBox">
+                            <div class="coupon-base-customCheckbox">
+                                <!-- <input type="checkbox"> -->
+                                <span class="coupon-base-labelChecked ">IC100</span>
+                            </div>
+                            <div class="coupon-base-infoContainer">
+                                <!-- <div class="coupon-base-benefit ">
+                     <span>Save </span>
+                     <span class="coupon-base-amount ">Rs.200</span>
+                     </div> -->
+                                <div class="coupon-base-extraInfo ">
+                                    <div class="readmore-base-mainContainer ">
+                                        <div class="readmore-base-fullWidthContainer">Save Extra ₹ 100/- on Min. Cart Value of ₹ 2500 &amp; above</div>
+                                    </div>
+                                    <!-- <div class="coupon-base-expiryBlock">Expires on: 
+                        <span class="coupon-base-expiryDate">30th October 2024</span><span class="coupon-base-expiryTime">11:59 PM</span>
+                        </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon-base-checkBox">
+                            <div class="coupon-base-customCheckbox">
+                                <!-- <input type="checkbox"> -->
+                                <span class="coupon-base-labelChecked ">CART5</span>
+                            </div>
+                            <div class="coupon-base-infoContainer">
+                                <!-- <div class="coupon-base-benefit ">
+                     <span>Save </span>
+                     <span class="coupon-base-amount ">Rs.200</span>
+                     </div> -->
+                                <div class="coupon-base-extraInfo ">
+                                    <div class="readmore-base-mainContainer ">
+                                        <div class="readmore-base-fullWidthContainer">Extra 5% off on Min. Cart Value of ₹ 5,000 &amp; above.</div>
+                                    </div>
+                                    <!-- <div class="coupon-base-expiryBlock">Expires on: 
+                        <span class="coupon-base-expiryDate">30th October 2024</span><span class="coupon-base-expiryTime">11:59 PM</span>
+                        </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon-base-checkBox">
+                            <div class="coupon-base-customCheckbox">
+                                <!-- <input type="checkbox"> -->
+                                <span class="coupon-base-labelChecked ">CART10</span>
+                            </div>
+                            <div class="coupon-base-infoContainer">
+                                <!-- <div class="coupon-base-benefit ">
+                     <span>Save </span>
+                     <span class="coupon-base-amount ">Rs.200</span>
+                     </div> -->
+                                <div class="coupon-base-extraInfo ">
+                                    <div class="readmore-base-mainContainer ">
+                                        <div class="readmore-base-fullWidthContainer">Extra 10% off on Min. Cart Value of ₹ 10,000 &amp; above</div>
+                                    </div>
+                                    <!-- <div class="coupon-base-expiryBlock">Expires on: 
+                        <span class="coupon-base-expiryDate">30th October 2024</span><span class="coupon-base-expiryTime">11:59 PM</span>
+                        </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="new-member-popup shipp-address-model-popup" style="display:none">
+            <div class="popup-overlay"></div>
+            <div class="contact-address" id="contact-ship-info-model">
+                <div class="head">
+                    <div class="title">Shipping Address</div>
+                </div>
+                <div class="shipping-address form-plot">
+                    <form class="form">
+                        <div class="block">
+                            <div class="field">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="postcode" class="input-text">
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                    <div class="custom-placeholder">Zip/Postal Code<span>*</span></div>
+                                </div>
+                                <div class="form-error postcode-err"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="field">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="firstname" class="input-text">
+                                    <div class="custom-placeholder">First Name<span>*</span></div>
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                </div>
+                                <div class="form-error firstname-err"></div>
+                            </div>
+                            <div class="field">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="lastname" class="input-text" placeholder="">
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                    <div class="custom-placeholder">Last Name<span>*</span></div>
+                                </div>
+                                <div class="form-error lastname-err"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="field address">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="addr1" class="input-text" placeholder="">
+                                    <div class="custom-placeholder">Address1<span>*</span></div>
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                </div>
+                                <div class="form-error addr1-err"></div>
+                            </div>
+                            <div class="field address">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="addr2" placeholder="Address2">
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                </div>
+                                <div class="form-error addr2-err"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="field city">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="city" class="input-text" placeholder="">
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                    <div class="custom-placeholder">City<span>*</span></div>
+                                </div>
+                                <div class="form-error city-err"></div>
+                            </div>
+                            <div class="field city">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="region" class="input-text" placeholder="">
+                                    <div class="custom-placeholder">State/Province<span>*</span></div>
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                </div>
+                                <div class="form-error region-err"></div>
+                            </div>
+                            <div class="field city">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="landmark" class="input-text" placeholder="">
+                                    <div class="custom-placeholder">Landmark<span>*</span></div>
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                </div>
+                                <div class="form-error landmark-err"></div>
+                            </div>
+                            <div class="field city">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="telephone" class="input-text" placeholder="">
+                                    <div class="custom-placeholder">Phone Number<span>*</span></div>
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                </div>
+                                <div class="form-error telephone-err"></div>
+                            </div>
+                            <div class="field city">
+                                <div class="input zip-code model-ship-code">
+                                    <input type="text" name="dob" class="dob" placeholder="DOB" onkeydown="return false;" readonly>
+                                    <!-- <p class="shipping-error-msg"></p> -->
+                                </div>
+                                <div class="form-error dob-err"></div>
+                            </div>
+                            <div class="field city">
+                                <div class="input zip-code model-ship-code">
+                                    <!-- <input type="text" name="" placeholder="India*"> -->
+                                    <select name="country_id" disabled>
+                        <option>India</option>
+                     </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-tc ship-tc">
+                            <label class="container">
+                           <input type="checkbox" checked="checked" id="whatsAppOppt">
+                           <span class="checkmark"></span>
+                           I agree to receive important updates and promotional messages over WhatsApp, SMS, Email etc.
+                       </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer payment-block">
+                    <button class="save-ship-address payment-btn" type="button">Save Address</button>
+                    <button class="cancel-ship-address payment-btn" type="button">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="store_code" value="english " />
+        <input type="hidden" id="store_name" value="English " />
+    </div>
+    <footer class="checkout-page-footer">
+        <div class="checkout-footer">
+            <div class="widget-section">
+                <ul class="widget-pay">
+                    <li>
+                        <a class="widget-option">                     
+                  </a>
+                    </li>
+
+                    <li>
+                        <a class="widget-option mastercard">
+                  </a>
+                    </li>
+                    <li>
+                        <a class="widget-option maestro">
+                  </a>
+                    </li>
+                    <li>
+                        <a class="widget-option rupay">
+                  </a>
+                    </li>
+                    <li>
+                        <a class="widget-option american-express">
+                  </a>
+                    </li>
+                    <!-- <li>
+                  <a class="widget-option jcb">
+                  </a>
+               </li>
+               <li>
+                  <a class="widget-option paypal">
+                  </a>
+               </li> -->
+                    <li>
+                        <a class="widget-option payu">
+                  </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="need-help-section">
+                <!-- <a href="/storelocator/stores" class="needhelp-link">Need Help? Contact us</a> -->
+                <a href="/new-delhi-store" class="needhelp-link">Need Help? Contact us</a>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------->
+    <!-- login popup starts -->
+    <div class="login-modal-wrapper" style="display: none;">
+        <div class="popup-overlay"></div>
+        <div class="login-modal">
+            <div class="modal-logo-section">
+                <div class="modal-logo">
+                    <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/logo-indiacircus-gray_new.svg?v=1' alt="logo" />
+                </div>
+                <button class="modal-close"></button>
+            </div>
+            <div class="login-step login-first-step">
+                <div class="modal-title">login now</div>
+                <form class="modal-form phoneinput" id="phonelogin_form">
+                    <input name="form_key" type="hidden" value="1kBschv3GsTwYWiz">
+                    <input type="hidden" value="1" name="is_ajax">
+                    <div class="input-wrapper">
+                        <input type="text" id="user_mob" name="login[user_mob]" class="mob-input" placeholder="Mobile number or Email" />
+                        <input type="hidden" class="form-control" name="login[checkContactNumber]" id="checkContactNumber" value="1">
+                        <div class="error-div"></div>
+                    </div>
+                    <div class="input-wrapper">
+                        <button class="continue-btn step-1 custom_userphone_loginbtn" type="button">continue</button>
+                    </div>
+                </form>
+                <button class="create-acc-btn">Don't have an account? Create</button>
+            </div>
+            <div class="login-step mobile-step" style="display: none;">
+                <div class="modal-title">login with otp
+                    <div class="otp-subtext">sent to <span class="otp-number"></span></div>
+                </div>
+                <form class="modal-form">
+                    <div class="input-wrapper">
+                        <div id="otp-input">
+                            <input type="number" maxlength="1" class="otp-digit">
+                            <input type="number" maxlength="1" class="otp-digit">
+                            <input type="number" maxlength="1" class="otp-digit">
+                            <input type="number" maxlength="1" class="otp-digit">
+                        </div>
+                        <div class="resend-plot">Didn't receive OTP ? <a href="javascript:void(0)" id="resend-link" class="resend-otp resend-link signin_resend-otp" data-flag="signin"> Resend </a><span id="timer"></span></div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="error-div"></div>
+                        <button class="continue-btn custom_userphone_loginbtn" type="button">continue</button>
+                    </div>
+                </form>
+                <div class="pwd-login">Login using<button class="fb-button" style="display:none;"></button> <button id="googlelogin2" class="google-btn"></button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login popup ends -->
+
+    <!-- checkout login popup starts -->
+    <div class="checkout-login-modal-wrapper">
+        <div class="popup-overlay"></div>
+        <div class="checkout-login-modal">
+            <div class="modal-logo-section">
+                <div class="modal-logo">
+                    <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/logo-indiacircus-gray_new.svg?v=1' alt="logo" />
+                </div>
+                <button class="modal-close"></button>
+            </div>
+            <div class="checkout-login-step mobile-step" style="display: none;">
+                <div class="modal-title">Enter OTP
+                    <div class="otp-subtext">sent to <span class="otp-number"></span></div>
+                </div>
+                <form class="modal-form">
+                    <div class="input-wrapper">
+                        <div id="otp-input">
+                            <input type="number" maxlength="1" class="otp-digit">
+                            <input type="number" maxlength="1" class="otp-digit">
+                            <input type="number" maxlength="1" class="otp-digit">
+                            <input type="number" maxlength="1" class="otp-digit">
+                        </div>
+                        <div class="resend-plot">Didn't receive OTP?<a href="javascript:void(0)" id="resend-link" class="resend-otp resend-link signin_resend-otp" data-flag="signin" data-checkout-flag="signin-checkout">Resend</a><span id="checkout-timer"></span></div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="error-div"></div>
+                        <button class="continue-btn custom_newuserphone_loginbtn" type="button">continue</button>
+                    </div>
+                </form>
+                <div class="pwd-login">Login using<button class="fb-button" style="display:none;"></button> <button id="googlelogin3" class="google-btn"></button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- checkout login popup ends -->
+
+    <!-- login after register popup  starts -->
+    <div class="new-login-modal-wrapper" style="display:none;">
+        <div class="popup-overlay"></div>
+        <div class="new-login-modal">
+            <div class="modal-logo-section">
+                <div class="modal-logo">
+                    <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/logo-indiacircus-gray_new.svg?v=1' alt="logo" />
+                </div>
+                <button class="modal-close"></button>
+            </div>
+            <div class="new-login-content-wrap">
+                <div class="modal-title-wrap">login with otp
+                    <span class="otp-subtext">sent to <span class="otp-number"></span></span>
+                </div>
+                <form class="modal-form">
+                    <div class="input-wrapper">
+                        <div id="otp-input" class="otp-input">
+                            <input type="text" maxlength="1" class="otp-digit" />
+                            <input type="text" maxlength="1" class="otp-digit" />
+                            <input type="text" maxlength="1" class="otp-digit" />
+                            <input type="text" maxlength="1" class="otp-digit" />
+                        </div>
+                        <div class="error-div"></div>
+                        <div class="new-resend-plot">Didn't receive OTP?<a href="#" id="new-resend-link" class="resend-otp resend-link register-resend-otp" data-flag="registermobile"> Resend </a><span id="new-timer">00:00</span></div>
+                    </div>
+                    <div class="input-wrapper">
+                        <button id="myregisteruserphone_loginbtn" class="continue-btn" type="button">continue</button>
+                    </div>
+                </form>
+                <!-- <button class="create-acc-btn">Don't have an account? Create</button> -->
+            </div>
+
+        </div>
+    </div>
+    <!-- login new popup ends -->
+
+    <!-- login by pwd popup starts-->
+    <!--<div class="login-by-pwd">
+        <div class="popup-overlay"></div>
+        <div class="login-by-pwd-modal">
+            <div class="modal-logo-section">
+                <div class="modal-logo">
+                    <img src='' alt="logo" />
+                </div>
+                <button class="modal-close"></button>
+            </div>
+       <div class="modal-title"><span>
+                    login now
+                </span></div>
+            <div class="social-login">
+                <button class="social-login-btn" style="display:none;">sign in with facebook</button>
+                <button id="googlelogin" class="social-login-btn google">google sign in</button>
+            </div>
+            <form class="modal-form" id="login_form" method="post">
+            <input type="hidden" value="1" name="is_ajax">
+                <div class="input-wrapper">
+                    <input type="text" class="mob-input" name="login[username]" id="user_email"  placeholder="Email address"/>
+               
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" class="mob-input" name="login[password]" id="user_password"  placeholder="Password"/>
+                    
+                </div>
+                <div class="input-wrapper">
+          <div class="error-div"></div>
+                    <button id="user_loginbtn" class="continue-btn login-btn" type="button">login now</button>
+                </div>
+            </form>
+            <div class="popup-footer">
+                <div class="forgot-pwd">forgot password?<button id="forgot-pwd" class="forgot-pwd-link">Click here</button></div>
+                <p class="footer-paragraph">shop at <span>indiacircus.com</span></p>
+                <p class="contx">*Conditions Apply</p>
+            </div>
+            
+        </div>
+    </div>-->
+    <!-- login by pwd popup ends-->
+
+    <!-- forgot pwd popup starts-->
+    <!--<div class="retrieve-pwd-popup">
+        <div class="popup-overlay"></div>
+        <div class="login-by-pwd-modal">
+            <div class="modal-logo-section">
+                <div class="modal-logo">
+                    <img src='' alt="logo" />
+                </div>
+                <button class="modal-close"></button>
+            </div>
+       <div class="modal-title"><span>
+                    Retrieve your Password
+             </span></div>
+            <form class="modal-form" id="forgotpass_form" method="post">
+         <input name="form_key" type="hidden" value="">
+         <input type="hidden" value="1" name="is_ajax">
+                <div class="input-wrapper">
+                    <input type="text" id="user_email" name="email"  class="mob-input" placeholder="Email"/>
+                    <div class="error-div"></div>
+                </div>
+                <div class="input-wrapper">
+                    <button id="forgot_passwordbtn" class="continue-btn login-btn" type="button">Retrieve Password</button>
+                </div>
+            </form>
+            <div class="popup-footer">
+                <div class="forgot-pwd">click here to<button id="login" class="forgot-pwd-link1">login</button></div>
+                <p class="footer-paragraph">shop at <span>indiacircus.com</span></p>
+                <p class="contx">*Conditions Apply</p>
+            </div> 
+        </div>
+    </div>-->
+    <!-- forgot pwd popup ends-->
+
+    <!-- signup pwd popup starts-->
+    <div class="signup-popup">
+        <div class="popup-overlay"></div>
+        <div class="signup-popup-plot">
+            <div class="modal-logo-section">
+                <div class="modal-logo">
+                    <img src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/logo-indiacircus-gray_new.svg?v=1' alt="logo" />
+                </div>
+                <button class="modal-close"></button>
+            </div>
+            <div class="title-border">
+                <div class="signip-title">
+                    Sign Up Now and Get
+                    <span> ₹1000*  </span> OFF
+                </div>
+            </div>
+            <form class="modal-form">
+                <div class="input-wrapper">
+                    <input type="text" id="user_name" class="mob-input" placeholder="First name" />
+                    <input type="hidden" minlength="3" maxlength="16" name="firstname" id="firstname" value="">
+
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" id="user_lastname" class="mob-input" placeholder="Last name" />
+                    <input type="hidden" minlength="3" maxlength="16" name="lastname" id="lastname" value="">
+
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" id="user_email" class="mob-input" placeholder="Email" />
+
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" id="user_mobile" class="mob-input" placeholder="Mobile number" maxlength="10" />
+
+                </div>
+                <!--<div class="input-wrapper">
+                    <input type="password" id="user_password" class="mob-input" placeholder="Password"/>
+          <input type="hidden" minlength="8" name="password_confirmation" id="user_confpassword">
+                    
+                </div>-->
+                <div class="input-wrapper">
+                    <label class="container">Sign me with your e-mail id to receive updates & deals directly in your mailbox.
+                        <input type="checkbox" id="is_subscribed" name="is_subscribed" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+                <div class="input-wrapper">
+                    <label class="container">I agree to receive important updates and promotional messages over WhatsApp, SMS, Email etc.
+                        <input type="checkbox" name="is_whatsappotin" id="is_whatsappotin" value="1" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+                <div class="input-wrapper">
+                    <div class="error-div"></div>
+                    <button id="create_accountbtn" class="continue-btn login-btn" type="button" style="display:none;">Create Account</button>
+                    <button id="otp_create_accountbtn" class="continue-btn login-btn" type="button" data-flag="register">Create Account</button>
+                    <span id="ic_ajax_small_loader_onSignup" style="display:none;"><img class="smallLoader smallLoaderOnSignUp" alt="loading.." src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/ajax-loader.gif?v=1'></span>
+                </div>
+            </form>
+            <div class="pwd-login">already a member?<button class="pwd-btn" id="login-now">Login now</button> </div>
+            <div class="pwd-login">or Login using <button class="fb-button" style="display:none;"></button> <button id="googlelogin2" class="google-btn"></button></div>
+        </div>
+    </div>
+
+    <!-- whatsapp starts-->
+    <div class="whatsapp-icon-wrap">
+        <a class="whatsapp-icon-link" href="https://wa.me/918291945165" target="_blank">
+            <img src="https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/images/whatsapp_chat.svg" alt="Connect to whatsapp">
+        </a>
+    </div>
+    <!-------------------------------------------------------------->
+
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/jquery.min.js?v=1.1992'></script>
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/header-footer.js?v=1.1992'></script>
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/login-pops.js?v=1.1992'>
+    </script>
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/nouislider.js?v=1.1992'></script>
+
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/googleLogin.js?v=6.4.79999985'></script>
+
+    <script type="text/javascript" src="https://apis.google.com/js/api:client.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+
+
+    <!-- Start of  Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=2b1eaead-f93f-44ad-8a8d-fd1acfe4a7a2"></script>
+    <!-- End of  Zendesk Widget script -->
+
+
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/checkout.js?v=1.3231.1992'></script>
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/custom-checkout-graphql.js?v=1.1992'></script>
+    <script src='https://indiacircus.com/pub/static/frontend/Indiacircus/theme001/en_US/Fermion_Pagelayout/js/slick.js?v=1.1992'></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            var checkArr = [];
+            var i = 0;
+            jQuery('.product').each(function() {
+                // Get product ID from data attribute
+                var productId = jQuery(this).data('product-id');
+
+                // Get product name from data attribute
+                var productName = jQuery(this).data('product-name');
+
+                // Get price
+                var price = jQuery(this).find('.price').text().trim();
+                var priceFOrGa = price.replace(jQuery('#currency_symb').val(), "").replace(/\s+/g, '');
+
+                // Get quantity (from hidden input, if needed)
+                var quantity = jQuery(this).find('input[type="hidden"][id="item_count"]').val();
+
+                var item = {
+                    item_id: parseFloat(productId),
+                    item_name: productName,
+                    coupon: jQuery('#coupon_code').val(),
+                    discount: parseFloat(jQuery('#discountAmount').val()),
+                    index: i,
+                    price: parseFloat(priceFOrGa),
+                    quantity: parseFloat(quantity)
+                };
+                checkArr.push(item);
+                i++;
+            });
+            var grandTotal = jQuery('#grandTotal').val();
+            dataLayer.push({
+                ecommerce: null
+            }); // Clear the previous ecommerce object.
+            dataLayer.push({
+                event: "begin_checkout",
+                ecommerce: {
+                    store_code: 'english',
+                    store_name: 'English',
+                    currency: jQuery('#curr_code').val(),
+                    value: parseFloat(grandTotal),
+                    subtotalWithDiscount: parseFloat(grandTotal),
+                    couponCodeUsed: jQuery('#coupon_code_hidden').val(),
+                    totalItemInCart: parseFloat(jQuery('#itemCount').val()),
+                    ua: '',
+                    items: checkArr,
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
