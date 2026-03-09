@@ -3,6 +3,8 @@
 @import url('../styles/home.css');
 @import url('../styles/signIn-signUp.css');
 @import url('../styles/font.css');
+@import url('../styles/privacy-policy.css');
+@import url('../styles/return-policy.css');
 
 * {
   box-sizing: border-box;
